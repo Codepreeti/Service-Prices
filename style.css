@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --bg-color: rgb(228, 197, 158);
+    --second-bg-color: rgb(175, 130, 96);
+    --text-color: rgb(50, 44, 43);
+    --main-color: rgb(128, 61, 59);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 2rem 9% 2rem;
+}
+ 
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.main {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.container {
+    margin: 8rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 10rem;
+}
+
+.container .container-box {
+    width: 38vw;
+    height: 43vh;
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--main-color);
+    transition: .5s ease;
+    box-shadow: 0 0 2rem var(--main-color);
+}
+
+.container .container-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+p {
+    font-size: 2rem;
+    padding: 8px;
+}
+
+h4 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+ul li {
+    font-size: 1.7rem;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+/* Breakpoints */
+@media (max-width: 1009px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 723px) {
+    html {
+        font-size: 60%;
+    }
+
+    .container .container-box {
+        height: 50%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 641px) {
+    html {
+        font-size: 50%;
+    }
+
+    .container .container-box {
+        height: 50%;
+        width: 140%;
+    }
+
+    .container .container-box ul li {
+        font-size: 1.3rem;
+    }    
+}
+
+@media (max-width: 498px) {
+    html {
+        font-size: 50%;
+    }
+
+    .container .container-box {
+        height: 50%;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }  
+}
+
+@media (max-width: 390px) {
+    html {
+        font-size: 40%;
+    }
+
+    .container .container-box {
+        height: 35vh;
+        width: 45vw;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }  
+}
+
+@media (max-width: 366px) {
+    html {
+        font-size: 35%;
+    }
+}
+
+@media (max-width: 299px) {
+    html {
+        font-size: 33%;
+    }
+}
